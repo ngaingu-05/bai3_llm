@@ -1,0 +1,15 @@
+build/
+install/
+log/
+.vscode/
+9router.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+src/Universal_Robots_ROS2_Driver/
+src/Universal_Robots_ROS2_GZ_Simulation/

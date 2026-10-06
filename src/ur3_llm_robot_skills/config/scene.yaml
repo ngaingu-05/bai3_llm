@@ -1,0 +1,27 @@
+ur3_skill_executor:
+  ros__parameters:
+    planning_group: ur_manipulator
+    planning_frame: base_link
+    tool_link: gripper_tcp
+    scene:
+      # Wider MoveIt collision table to fit 5 blocks + 3 zones + 2 temp positions
+      table_size: [0.20, 0.90, 0.04]
+      table_pose: [-0.30, 0.0, 0.160]
+
+      object_size: [0.04, 0.04, 0.04]
+
+      # Initial object positions (some start in zones to create conflicts)
+      red_cube:    [-0.30,  0.05, 0.27]
+      yellow_cube: [-0.30,  0.20, 0.27]
+      blue_cube:   [-0.25, -0.12, 0.27]  # starts in zone_b
+      green_cube:  [-0.25, -0.30, 0.27]  # starts in zone_a
+      purple_cube: [-0.30,  0.35, 0.27]
+
+      # Zone positions
+      zone_a: [-0.25, -0.30, 0.27]
+      zone_b: [-0.25, -0.12, 0.27]
+      zone_c: [-0.25,  0.28, 0.27]
+
+      # Unmarked free-table positions used only for conflict resolution.
+      temp_1: [-0.30, -0.20, 0.27]
+      temp_2: [-0.30, -0.05, 0.27]

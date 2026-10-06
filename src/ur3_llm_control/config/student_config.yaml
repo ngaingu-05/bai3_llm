@@ -1,0 +1,19 @@
+student_name: Nguyen Minh Nghia
+student_id: "23020755"
+objects:
+  - red_cube
+  - yellow_cube
+  - blue_cube
+  - green_cube
+  - purple_cube
+zones:
+  zone_a: {}
+  zone_b: {}
+  zone_c: {}
+temporary_positions:
+  temp_1: {}
+  temp_2: {}
+zone_assignments:
+  zone_a: red_cube
+  zone_b: blue_cube
+  zone_c: yellow_cube
